@@ -25,5 +25,9 @@ public class Harness {
         musicCopy.view();
         System.out.println(actuallyCD.equals(musicCopy));
         System.out.println(actuallyBook.equals(actuallyCD));
+
+        InventoryItem textbook = new Textbook("A Bad Book", 150, 1, "Underpaid Author", "Trees");
+        InventoryItem novel = new Novel("A Bad Book", 150, 1, "Underpaid Author", "Trees");
+        System.out.println(textbook.equals(novel));
     }
 }
